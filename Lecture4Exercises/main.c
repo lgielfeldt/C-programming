@@ -132,7 +132,7 @@ void exercise6() {
 
     int g = b >> 4;     // b >> 4       << = bitwise right shift operation
 
-    
+
     printf("a AND b = 0x%X AND 0x%X = %i AND %i = 0x%X = %i \n", a, b, a, b, c, c);
 
     printf("a  OR b = 0x%X  OR 0x%X = %i  OR %i = 0x%X = %i \n", a, b, a, b, d, d);
