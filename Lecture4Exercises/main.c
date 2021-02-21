@@ -118,15 +118,15 @@ void exercise6() {
 
     int a, b;
 
-    a=0x75;
-    b=0xAC;
+    a = 0x75;
+    b = 0xAC;
 
 
     int c = a & b;      // a AND b      &  = bitwise AND
 
     int d = a | b;      // a OR b       |  = bitwise OR
 
-    int e = a ^ b;      // a XOR b      ^  = bitwise XOR
+    int e = a ^b;      // a XOR b      ^  = bitwise XOR
 
     int f = a << 8;     // a << 8       << = bitwise left shift operation
 
@@ -149,13 +149,80 @@ void exercise6() {
 
 }
 
+
+void samplebig() {
+
+    printf("Exercise 5 \n\n");
+
+    int r, d;
+    float pi, c, A;
+
+    pi = 3.14;
+
+
+    printf("Write your value of r here: ");
+    char str[60];
+    fgets(str, 60, stdin);
+
+    int parsed = sscanf(str, "%i", &r);
+    while (parsed == 0) {
+        printf("ikke et tal\n");
+        printf("Write your value of r here: ");
+        fgets(str, 60, stdin);
+        parsed = sscanf(str, "%i", &r);
+    }
+
+    d = 2 * r;
+    c = 2 * pi * r;
+    A = pi * r * r;
+
+    printf("The diameter of the circle is d = 2 * %i = %i\n\n", r, d);
+    printf("The circumference of the circle is c = 2 * pi * r = 2 * %f * %i = %.2f\n\n", pi, r, c);
+    printf("The area of the circle is A = pi *r^2 = %f * %i^2 = %.2f\n\n", pi, r, A);
+
+}
+
+
+void samplelittle() {
+
+    printf("Exercise 5 \n\n");
+
+    int r, d;
+    float pi, c, A;
+
+    pi = 3.14;
+
+
+    char str[60];
+    int parsed = 0;
+
+    while (parsed == 0) {
+        printf("Write your value of r here: ");
+        fgets(str, 60, stdin);
+        parsed = sscanf(str, "%i", &r);
+
+    }
+
+    d = 2 * r;
+    c = 2 * pi * r;
+    A = pi * r * r;
+
+    printf("The diameter of the circle is d = 2 * %i = %i\n\n", r, d);
+    printf("The circumference of the circle is c = 2 * pi * r = 2 * %f * %i = %.2f\n\n", pi, r, c);
+    printf("The area of the circle is A = pi *r^2 = %f * %i^2 = %.2f\n\n", pi, r, A);
+
+
+}
+
+
 int main() {
+    samplebig();
+    //samplelittle();
+    return 0;
     int c = exercise2(3, 4);
     exercise3(c);
     exercise4a(3, 5);
     exercise4b(3, 5);
     //exercise5();
     exercise6();
-
-    return 0;
 }
