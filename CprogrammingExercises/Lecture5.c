@@ -29,13 +29,21 @@ void exercise5_1() {
             break;
     }
 
-    // Runs just fine. However when inputting something which is neither Y or N, it
-    // responds with both "You didn't choose Y or N" and "You answered yes".
-    // This is because we are missing a "break;" after the default.
+    printf("\n\n\n*** Observations: *** \n\n");
 
-    // Also, it might benefit from a \n after each answer.
 
-    // Try to correct the code:
+    printf("- Runs just fine. However when inputting something which is neither Y or N, it\n"
+           "  responds with both \"You didn't choose Y or N\" and \"You answered yes\".\n"
+           "  This is because we are missing a \"break;\" after the default.\n"
+           "- Also, it might benefit from a \\n after each answer.\n"
+           "- Try to correct the code:");
+
+
+    // - Runs just fine. However when inputting something which is neither Y or N, it
+    //   responds with both "You didn't choose Y or N" and "You answered yes".
+    //   This is because we are missing a "break;" after the default.
+    // - Also, it might benefit from a \n after each answer.
+    // - Try to correct the program:
 
 }
 
@@ -79,7 +87,7 @@ void exercise5_2() {
 
 }
 
-//Exercise 5_1
+//Exercise 5_3
 //Write a C program to fills an array with signed int numbers and search whether a given
 //number exists in a 1D array or not. You will need to use loop to fill and check each element of
 //the array and will have to make some comparisons between the elements and the given
