@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void Lecturename() {
+void Lecturename5() {
     printf("\n******************************************"
                   "\n*************** Lecture  5 ***************"
                   "\n******************************************\n");
 }
 
-void exercise1() {
+void exercise5_1() {
 
 
 
@@ -14,21 +14,21 @@ void exercise1() {
 
 }
 
-void exercise2() {
+void exercise5_2() {
 
 
 
 
 }
 
-void exercise3() {
+void exercise5_3() {
 
 
 
 
 }
 
-void exercise4() {
+void exercise5_4() {
 
 
 
@@ -36,29 +36,27 @@ void exercise4() {
 
 /* **************************  Exercise 5 ************************ */
 
-void exercise5() {
+void exercise5_5() {
 
 
 
 
 }
 
-void exercise6() {
+void exercise5_6() {
 
 
 
 
 }
 
-int main() {
-    Lecturename();
-    exercise1();
-    exercise2();
-    exercise3();
-    exercise4();
-    exercise5();
-    exercise6();
-    samplebig();
-    samplelittle();
+int main5() {
+    Lecturename5();
+    exercise5_1();
+    exercise5_2();
+    exercise5_3();
+    exercise5_4();
+    exercise5_5();
+    exercise5_6();
     return 0;
 }

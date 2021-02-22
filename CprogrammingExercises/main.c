@@ -204,8 +204,9 @@ void samplelittle() {
 
 }
 
+//#include "Lecture4.c"
 
-
+#include "Lecture5.c"
 
 int main() {
     Lecturename();
@@ -217,5 +218,12 @@ int main() {
     exercise6();
     samplebig();
     samplelittle();
+    Lecturename5();
+    exercise5_1();
+    exercise5_2();
+    exercise5_3();
+    exercise5_4();
+    exercise5_5();
+    exercise5_6();
     return 0;
 }
