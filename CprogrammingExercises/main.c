@@ -18,15 +18,15 @@ int main() {
     //exercise4_3(c);
     //exercise4_4a(3, 5);
     //exercise4_4b(3, 5);
-    exercise4_5();
+    //exercise4_5();
     //exercise4_6();
     //sample_big();
     sample_little();
 
     Lecture_name5();
-    exercise5_1a();
-    exercise5_1b();
-    exercise5_1c();
+    //exercise5_1a();
+    //exercise5_1b();
+    //exercise5_1c();
     exercise5_2();
     exercise5_3();
     exercise5_4();

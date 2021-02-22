@@ -95,8 +95,6 @@ void exercise4_5(){
     printf("Write your value of r here: ");
     scanf("%d", &r);
 
-    fflush(stdin);
-
     d = 2 * r;
     c = 2 * pi * r;
     A = pi * r * r;
@@ -129,7 +127,7 @@ void exercise4_6(){
 
     int c = a & b;      // a AND b      &  = bitwise AND
     int d = a | b;      // a OR b       |  = bitwise OR
-    int e = a ^b;      // a XOR b      ^  = bitwise XOR
+    int e = a ^b;       // a XOR b      ^  = bitwise XOR
     int f = a << 8;     // a << 8       << = bitwise left shift operation
     int g = b >> 4;     // b >> 4       << = bitwise right shift operation
 

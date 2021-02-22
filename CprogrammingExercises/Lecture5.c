@@ -46,7 +46,7 @@ void exercise5_1a() {
 }
 
 void exercise5_1b() {
-    printf("**** Corrected code (without sscanf: **** \n\n");
+    printf("**** Corrected code (without sscanf): **** \n\n");
 
     char answer;
     printf("read answer, Y/N ?: ");
@@ -77,7 +77,7 @@ void exercise5_1c() {
 
     printf("read answer, Y/N ?: ");
     char str[60];
-    fgets(str, 60, stdin);
+    fgets(str, sizeof str, stdin);
     sscanf(str, "%c", &answer);
     switch (answer) {
         default:
