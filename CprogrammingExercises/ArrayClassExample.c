@@ -3,7 +3,7 @@
 
 // int a[3][3];
 
-int main()
+void ArrayClassExample()
 {   // have to initialize it - you can do it directly here or read each number from the keyboard
 	int a[3][3];
 	int i,j; // You will need them
@@ -27,7 +27,7 @@ int main()
 					else printf("%d ",a[i][j]);
 				}
 
-	return 0;
+
 }
 
 

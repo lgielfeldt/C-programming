@@ -4,6 +4,8 @@
 #include "Lecture4.c"
 
 #include "Lecture5.c"
+    #include "BreakExample"
+    #include "ArrayclassExamples"
 
 int main() {
 
@@ -20,11 +22,15 @@ int main() {
     Lecture_name5();
     //exercise5_1();
     //exercise5_1b();
-    exercise5_1c();
+    //exercise5_1c();
     exercise5_2();
     exercise5_3();
     exercise5_4();
     exercise5_5();
     exercise5_6();
+
+    //Lecture 5 examples:
+
+
     return 0;
 }
