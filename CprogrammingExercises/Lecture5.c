@@ -39,17 +39,46 @@ void exercise5_1() {
             // - Runs just fine. However when inputting something which is neither Y or N, it
             //   responds with both "You didn't choose Y or N" and "You answered yes".
             //   This is because we are missing a "break;" after the default.
+            // - Also it is using scanf, which can cause errors. It should use sscanf.
             // - Also, it might benefit from a \n after each answer.
             // - Try to correct the program:
 
 }
 
 void exercise5_1b() {
-    printf("**** Corrected code: **** \n\n");
+    printf("**** Corrected code (without sscanf: **** \n\n");
 
     char answer;
     printf("read answer, Y/N ?: ");
     scanf("%c", &answer);
+    switch (answer) {
+        default:
+            printf("You didn't choose Y or N\n");
+            break;
+        case 'Y':
+            printf("You answered yes\n");
+            break;
+        case 'N':
+            printf("You answered no\n");
+            break;
+    }
+
+
+    printf("\n\n\n\n");
+
+
+}
+
+
+void exercise5_1c() {
+    printf("**** Corrected code (with sscanf) : **** \n\n");
+
+    char answer;
+
+    printf("read answer, Y/N ?: ");
+    char str[60];
+    fgets(str, 60, stdin);
+    sscanf(str, "%c", &answer);
     switch (answer) {
         default:
             printf("You didn't choose Y or N\n");

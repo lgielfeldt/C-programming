@@ -18,8 +18,9 @@ int main() {
     //sample_little();
 
     Lecture_name5();
-    exercise5_1();
-    exercise5_1b();
+    //exercise5_1();
+    //exercise5_1b();
+    exercise5_1c();
     exercise5_2();
     exercise5_3();
     exercise5_4();
