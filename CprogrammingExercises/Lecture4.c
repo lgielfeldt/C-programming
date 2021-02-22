@@ -157,13 +157,13 @@ void sample_big(){
 
     printf("Write your value of r here: \n");
     char str[60];
-    fgets(str, 60, stdin);
+    fgets(str, sizeof str, stdin);
 
     int parsed = sscanf(str, "%i", &r);
     while (parsed == 0) {
         printf("The input is not a number, please input a number.\n");
         printf("Write your value of r here: ");
-        fgets(str, 60, stdin);
+        fgets(str, sizeof str, stdin);
         parsed = sscanf(str, "%i", &r);
     }
 
@@ -192,7 +192,7 @@ void sample_little(){
 
     while (parsed == 0) {
         printf("Write your value of r here: ");
-        fgets(str, 60, stdin);
+        fgets(str, sizeof str, stdin);
         parsed = sscanf(str, "%i", &r);
 
     }
