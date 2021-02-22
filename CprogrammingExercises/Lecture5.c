@@ -8,7 +8,7 @@ void Lecture_name5() {
 
 //************************** Exercise 5_1 ************************
 //What do you think, is everything all right with the following code?
-void exercise5_1() {
+void exercise5_1a() {
     printf("*************** Exercise 5_1 *************** \n\n");
 
     char answer;

@@ -7,6 +7,10 @@
     #include "BreakExample.c"
     #include "ArrayClassExample.c"
 
+#include "Lecture6.c"
+
+
+
 int main() {
 
     //Lecture_name4();
@@ -20,7 +24,7 @@ int main() {
     //sample_little();
 
     Lecture_name5();
-    //exercise5_1();
+    //exercise5_1a();
     //exercise5_1b();
     //exercise5_1c();
     exercise5_2();
@@ -31,6 +35,8 @@ int main() {
 
     //Lecture 5 examples:
 
+    //Lecture_name6();
+    //exercise6_1();
 
     return 0;
 }
