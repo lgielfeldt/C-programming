@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void Lecturename() {
+void Lecture_name4() {
     printf("\n******************************************"
                   "\n*************** Lecture  4 ***************"
                   "\n******************************************\n\n\n\n");
@@ -12,9 +12,9 @@ you own C code that defines 5 integer variables, a,b,c,d and e and assigns value
 and b. Store in c the sum, in d the difference and in e the product of a and b. Print the
 results on the screen. */
 
-int exercise2(int a, int b) {
+int exercise4_2(int a, int b) {
 
-    printf("*************** Exercise 2 *************** \n\n");
+    printf("*************** Exercise 4_2 *************** \n\n");
 
     int c, d, e;
     float f;
@@ -22,7 +22,7 @@ int exercise2(int a, int b) {
     c = a + b;
     d = a - b;
     e = a * b;
-    f = a / (float) b;
+    f = (float) a / (float) b;
 
     printf("The sum of a and b is c = %i + %i = %i \n", a, b, c);
     printf("The difference of a and b is d = %i - %i = %i \n", a, b, d);
@@ -35,11 +35,13 @@ int exercise2(int a, int b) {
 //Exercise 3 //
 // Extend your C code that calculates the square of c number and print the result on the screen.
 
-void exercise3(int c) {
+void exercise4_3(int c) {
 
-    printf("*************** Exercise 3 *************** \n\n");
+    printf("*************** Exercise 4_3 *************** \n\n");
 
     printf("The square of c is = c^2 = %i * %i = %i \n\n\n\n", c, c, c * c);
+
+
 
 }
 
@@ -51,39 +53,42 @@ solution of this first order equation. Check the result when the coefficients ar
 as integers (int). Change the type of the variables to be float. What observations can
 you make? How can you obtain a floating result when the coefficients are still integers? */
 
-void exercise4a(int a, int b) {
+void exercise4_4a(int a, int b) {
 
-    printf("*************** Exercise 4a *************** \n\n");
+    printf("*************** Exercise 4_4a *************** \n\n");
 
     float x;
 
-    x = b / a;
+    x = b / a;              // Creates warning because a and b aren't floats, but x is a float.
+                            // But that's the exercise.
 
     printf("x = %f\n\n\n\n", x);
+
 
 }
 
-void exercise4b(float a, float b) {
+void exercise4_4b(float a, float b) {
 
-    printf("*************** Exercise 4b *************** \n\n");
+    printf("*************** Exercise 4_4b *************** \n\n");
 
     float x;
 
     x = b / a;
 
     printf("x = %f\n\n\n\n", x);
+
 }
 
 /*  Exercise 5
     Write a C program that for a given radius of a circle, r, given from keyboard and stored in
     variables, calculates the diameter, circumference and area of the circle. */
 
-void exercise5() {
+void exercise4_5(){
 
-    printf("*************** Exercise 5 *************** \n\n");
+    printf("*************** Exercise 4_5 *************** \n\n");
 
     int r, d;
-    float pi, c, A;
+    double pi, c, A;
 
     pi = 3.14;
 
@@ -98,7 +103,6 @@ void exercise5() {
     printf("The circumference of the circle is c = 2 * pi * r = 2 * %f * %i = %.2f\n", pi, r, c);
     printf("The area of the circle is A = pi *r^2 = %f * %i^2 = %.2f\n\n\n\n", pi, r, A);
 
-
 }
 
 /* Write a C code that creates two variables and assign hexadecimal values to them, ex. int
@@ -112,9 +116,9 @@ void exercise5() {
 • Using bitwise operators, manipulate the original two numbers, so that in the third
   variable the result will be ex. h=0x75AC. Print the result in hexadecimal format. */
 
-void exercise6() {
+void exercise4_6(){
 
-    printf("*************** Exercise 6 *************** \n\n");
+    printf("*************** Exercise 4_6 *************** \n\n");
 
     int a, b;
 
@@ -141,12 +145,12 @@ void exercise6() {
 }
 
 
-void samplebig() {
+void sample_big(){
 
-    printf("*************** Sample big 5 *************** \n\n");
+    printf("*************** Sample big *************** \n\n");
 
     int r, d;
-    float pi, c, A;
+    double pi, c, A;
 
     pi = 3.14;
 
@@ -174,12 +178,12 @@ void samplebig() {
 }
 
 
-void samplelittle() {
+void sample_little(){
 
     printf("*************** Sample little ***************\n\n");
 
     int r, d;
-    float pi, c, A;
+    double pi, c, A;
 
     pi = 3.14;
 
@@ -195,25 +199,10 @@ void samplelittle() {
 
     d = 2 * r;
     c = 2 * pi * r;
-    A = pi * r * r;
+    A = pi * (double) r * (double) r;
 
     printf("The diameter of the circle is d = 2 * %i = %i\n", r, d);
     printf("The circumference of the circle is c = 2 * pi * r = 2 * %f * %i = %.2f\n", pi, r, c);
     printf("The area of the circle is A = pi *r^2 = %f * %i^2 = %.2f\n\n\n\n", pi, r, A);
 
-
-}
-
-
-int main() {
-    Lecturename();
-    int c = exercise2(3, 4);
-    exercise3(c);
-    exercise4a(3, 5);
-    exercise4b(3, 5);
-    exercise5();
-    exercise6();
-    samplebig();
-    samplelittle();
-    return 0;
 }
