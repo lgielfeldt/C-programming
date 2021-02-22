@@ -4,8 +4,8 @@
 #include "Lecture4.c"
 
 #include "Lecture5.c"
-    #include "BreakExample"
-    #include "ArrayclassExamples"
+    #include "BreakExample.c"
+    #include "ArrayClassExample.c"
 
 int main() {
 
