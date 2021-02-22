@@ -20,7 +20,7 @@ int main() {
     //exercise4_4b(3, 5);
     exercise4_5();
     //exercise4_6();
-    sample_big();
+    //sample_big();
     sample_little();
 
     Lecture_name5();

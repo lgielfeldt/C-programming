@@ -95,6 +95,8 @@ void exercise4_5(){
     printf("Write your value of r here: ");
     scanf("%d", &r);
 
+    fflush(stdin);
+
     d = 2 * r;
     c = 2 * pi * r;
     A = pi * r * r;
@@ -155,7 +157,7 @@ void sample_big(){
     pi = 3.14;
 
 
-    printf("Write your value of r here: \n");
+    printf("Write your value of r here: ");
     char str[60];
     fgets(str, sizeof str, stdin);
 
