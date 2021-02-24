@@ -269,7 +269,7 @@ void exercise5_6() {
     printf("Your 2D array looks like this:\n");
     for (i = 0; i < n; i++)
         for (j = 0; j < m; j++) {
-            if (j == m-1) { printf("%i \n", A[i][j]); }
+            if (j == m - 1) { printf("%i \n", A[i][j]); }
             else { printf("%i ", A[i][j]); }
         }
 
@@ -290,4 +290,12 @@ void exercise5_6() {
     printf("the minimum of the array is min = %i\n", min);
 
 
+}
+
+void tester() {
+    int x;
+    printf("Enter an integer: ");
+    scanf("%d", &x);
+    printf("The sign of %d is %s\n\n", x,
+           x < 0 ? "negative" : x == 0 ? "neutral" : "positive");
 }

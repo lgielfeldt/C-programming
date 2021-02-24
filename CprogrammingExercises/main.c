@@ -28,7 +28,7 @@ int main() {
 
     //Lecture 5 files:
     //*****************
-        Lecture_name5();
+        //Lecture_name5();
         //exercise5_1a();
         //exercise5_1b();
         //exercise5_1c();
@@ -37,7 +37,8 @@ int main() {
         //exercise5_3b();
         //exercise5_4();
         //exercise5_5();
-        exercise5_6();
+        //exercise5_6();
+        tester();
 
         //Lecture 5 examples:
             //Lecture5example1();
