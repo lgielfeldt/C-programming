@@ -41,8 +41,6 @@ void exercise4_3(int c) {
 
     printf("The square of c is = c^2 = %i * %i = %i \n\n\n\n", c, c, c * c);
 
-
-
 }
 
 /* Exercise 4: first order equation
@@ -84,7 +82,7 @@ void exercise4_4b(float a, float b) {
     variables, calculates the diameter, circumference and area of the circle. */
 
 void exercise4_5(){
-
+    setvbuf(stdout, NULL, _IONBF, 0);
     printf("*************** Exercise 4_5 *************** \n\n");
 
     int r, d;
