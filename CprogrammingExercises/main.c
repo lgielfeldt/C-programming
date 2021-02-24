@@ -35,9 +35,9 @@ int main() {
         //exercise5_2();
         //exercise5_3a();
         //exercise5_3b();
-        exercise5_4();
+        //exercise5_4();
         //exercise5_5();
-        //exercise5_6();
+        exercise5_6();
 
         //Lecture 5 examples:
             //Lecture5example1();

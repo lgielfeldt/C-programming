@@ -252,4 +252,42 @@ void exercise5_5() {
 void exercise5_6() {
     printf("*************** Exercise 5_6 *************** \n\n");
 
+    int i, j, n, m, A[100][100], min, max;
+
+    printf("Input the number of rows wanted:\n");               // (Vertical spaces)
+    scanf("%i", &n);
+
+    printf("Input the number of columns wanted:\n");            // (Horizontal spaces)
+    scanf("%i", &m);
+
+    printf("Input the content of A :\n");
+    for (i = 0; i < n; i++)
+        for (j = 0; j < m; j++) {
+            scanf("%i", &A[i][j]);
+        }
+
+    printf("Your 2D array looks like this:\n");
+    for (i = 0; i < n; i++)
+        for (j = 0; j < m; j++) {
+            if (j == m-1) { printf("%i \n", A[i][j]); }
+            else { printf("%i ", A[i][j]); }
+        }
+
+    // we want to read min and max
+
+    min = A[0][0];                                                    // just for initialization
+    max = A[0][0];
+
+    //now we compare
+
+    for (i = 0; i < n; i++)
+        for (j = 0; j < m; j++) {
+            if (max < A[i][j]) { max = A[i][j]; }
+            if (min > A[i][j]) { min = A[i][j]; }
+        }
+
+    printf("the maximum of the array is max = %i\n", max);
+    printf("the minimum of the array is min = %i\n", min);
+
+
 }
