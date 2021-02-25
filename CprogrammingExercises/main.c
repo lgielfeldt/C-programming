@@ -10,7 +10,7 @@
 
 #include "Lecture6.c"
 
-
+#include "Header.h"
 
 int main() {
 
@@ -26,7 +26,7 @@ int main() {
         //sample_big();
         //sample_little();
 
-    //Lecture 5 files:
+    //Lecture 5 functions:
     //*****************
         //Lecture_name5();
         //exercise5_1a();
@@ -38,12 +38,34 @@ int main() {
         //exercise5_4();
         //exercise5_5();
         //exercise5_6();
-        tester();
+        //tester();
 
         //Lecture 5 examples:
             //Lecture5example1();
             //Lecture_name6();
             //exercise6_1();
+
+    //Lecture 6 functions
+        //Lecture_name6();
+        //exercise6_1();
+            //Beers();
+
+        exercise6_2();
+            double a = givesa(a);
+            double b = givesb(b);
+            double x = sumfunction(a, b);
+            double y = difference(a, b);
+            double z = productfunction(a, b);
+            double g = relationfunction(a, b);
+            printing(a, b, x, y, z, g);
+    //printf("The sum of a and b is: %lf + %lf = %.2lf \n", a, b, x);
+    //printf("The difference of a and b is: %lf - %lf = %.2lf \n", a, b, y);
+    //printf("The product of a and b is: %lf * %lf = %.2lf \n", a, b, z);
+    //printf("The product of a and b is: %lf / %lf = %.2lf \n", a, b, g);
+
+
+
+
 
     return 0;
 }
