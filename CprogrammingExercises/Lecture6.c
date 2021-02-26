@@ -18,6 +18,7 @@ void Lecture_name6() {
 void exercise6_1() {
     printf("*************** Exercise 6_1 *************** \n\n");
 }
+
 double Beers() {
     int const number_of_beers = 3;
     int number_of_guests;
@@ -86,6 +87,7 @@ double givesb(double b) {
 
     return b;
 }
+
 double sumfunction(double a, double b) {
 
     double sum = a + b;
@@ -114,7 +116,7 @@ double relationfunction(double a, double b) {
     return relation;
 }
 
-void printing(double a, double b, double x, double y, double z, double g){
+void printing(double a, double b, double x, double y, double z, double g) {
 
     printf("The sum of a and b is: %lf + %lf = %.2lf \n", a, b, x);
     printf("The difference of a and b is: %lf - %lf = %.2lf \n", a, b, y);
@@ -122,3 +124,30 @@ void printing(double a, double b, double x, double y, double z, double g){
     printf("The relation of a and b is: %lf / %lf = %.2lf \n", a, b, g);
 
 }
+
+void user_defined(double x, double y, double z, double g) {
+
+    int option;
+
+    printf("MENU: \n   1. Add \n   2. Subtract \n   3. Multiply \n   4. Divide \n\n");
+    printf("Pick a number from the menu above: ");
+    scanf("%d", &option);
+
+    switch (option) {
+        case 1:
+            printf("\nThe sum of a and b is %.2lf\n", x); break;
+        case 2:
+            printf("\nThe difference of a and b is %.2lf\n", y); break;
+        case 3:
+            printf("\nThe product of a and b is %.2lf\n", z); break;
+        case 4:
+            printf("\nThe relation of a and b is %.2lf\n", g); break;
+        default:
+            printf("\nYou didn't choose a number from the menu.\n"); break;
+    }
+
+}
+
+
+
+
