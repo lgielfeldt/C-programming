@@ -68,10 +68,10 @@ void exercise6_2() {
 
 }
 
-double givesa(double a) {
+double givesa() {
 
     char str1[1000];
-
+    double a;
     printf("Enter your value of a:");
     fgets(str1, sizeof str1, stdin);
     sscanf(str1, "%lf", &a);
@@ -79,8 +79,9 @@ double givesa(double a) {
     return a;
 }
 
-double givesb(double b) {
+double givesb() {
     char str2[1000];
+    double b;
     printf("Enter your value of b:");
     fgets(str2, sizeof str2, stdin);
     sscanf(str2, "%lf", &b);

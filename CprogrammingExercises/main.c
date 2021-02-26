@@ -51,9 +51,9 @@ int main() {
         //exercise6_1();
             //Beers();
 
-        exercise6_2();
-            double a = givesa(a);
-            double b = givesb(b);
+        /*exercise6_2();
+            double a = givesa();
+            double b = givesb();
             double x = sumfunction(a, b);
             double y = difference(a, b);
             double z = productfunction(a, b);
@@ -63,12 +63,12 @@ int main() {
                 //printf("The difference of a and b is: %lf - %lf = %.2lf \n", a, b, y);
                 //printf("The product of a and b is: %lf * %lf = %.2lf \n", a, b, z);
                 //printf("The product of a and b is: %lf / %lf = %.2lf \n", a, b, g);
-            user_defined(x, y, z, g);
+            user_defined(x, y, z, g);*/
 
     //Lecture 7 functions
         //Lecture_name7();
         //exercise7_1();
-        //exercise7_2();
+        exercise7_2();
         //exercise7_3();
         //exercise7_4();
 

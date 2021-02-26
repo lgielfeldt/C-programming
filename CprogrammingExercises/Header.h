@@ -1,7 +1,7 @@
 
 void exercise6_2();
-double givesa(double a);
-double givesb(double b);
+double givesa();
+double givesb();
 double sumfunction(double a, double b);
 double difference(double a, double b);
 double productfunction(double a, double b);
