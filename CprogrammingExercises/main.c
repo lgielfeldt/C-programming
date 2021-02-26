@@ -9,12 +9,13 @@
     #include "Lecture5examples.c"
 
 #include "Lecture6.c"
+#include "Lecture7.c"
 
 #include "Header.h"
 
 int main() {
 
-    //Lecture 4 files:
+    //Lecture 4 functions:
 
         //Lecture_name4();
         //int c = exercise4_2(3, 4);
@@ -58,12 +59,17 @@ int main() {
             double z = productfunction(a, b);
             double g = relationfunction(a, b);
             printing(a, b, x, y, z, g);
-    //printf("The sum of a and b is: %lf + %lf = %.2lf \n", a, b, x);
-    //printf("The difference of a and b is: %lf - %lf = %.2lf \n", a, b, y);
-    //printf("The product of a and b is: %lf * %lf = %.2lf \n", a, b, z);
-    //printf("The product of a and b is: %lf / %lf = %.2lf \n", a, b, g);
+                //printf("The sum of a and b is: %lf + %lf = %.2lf \n", a, b, x);
+                //printf("The difference of a and b is: %lf - %lf = %.2lf \n", a, b, y);
+                //printf("The product of a and b is: %lf * %lf = %.2lf \n", a, b, z);
+                //printf("The product of a and b is: %lf / %lf = %.2lf \n", a, b, g);
 
-
+    //Lecture 7 functions
+        Lecture_name7();
+        exercise7_1();
+        exercise7_2();
+        exercise7_3();
+        exercise7_4();
 
 
 
