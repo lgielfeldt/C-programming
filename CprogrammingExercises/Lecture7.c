@@ -53,20 +53,39 @@ void exercise7_2() {
     fgets(str2, sizeof str2, stdin);
     sscanf(str2, "%lf  %lf", &b.Real, &b.Imag);
 
-    printf("%lf + %lf\n", a.Real, a.Imag);
-    printf("%lf + %lf\n", b.Real, b.Imag);
+    printf("%lf + %lf * i\n", a.Real, a.Imag);
+    printf("%lf + %lf * i\n", b.Real, b.Imag);
+
+}
 
 //************************** Exercise 7_3 ************************
 //4. Calculate the sum of the two numbers (a+b), the difference of the two complex numbers (a-b) and the product of the
 //two numbers (a*b). Create for each operation a separate function (add_comp (), sub_comp(), prod_comp()). *See how
-//do we operate with complex numbers. When calculating a product, pay attention that i
-//2=-1.
+//do we operate with complex numbers. When calculating a product, pay attention that i^2=-1.
 //Question: How would you return the results, knowing that functions can only return basic data types, cannot return
 //structures or other complex datatypes (Hint Lecture 7, slide 20)?
 
+double add_comp(double a,double b){
 
+    double c = a + b;
+    return c;
+}
 
+double sub_comp(double a,double b){
 
+    double d = a - b;
+    return d;
+}
 
+double prod_comp(double a,double b){
 
+    double f = a * b;
+    return f;
+}
+
+void printing2(double a,double b, double c,double d, double f){
+
+    printf("The sum of a and b is: %lf + %lf = %.2lf \n", a, b, c);
+    printf("The difference of a and b is: %lf - %lf = %.2lf \n", a, b, d);
+    printf("The product of a and b is: %lf * %lf = %.2lf \n", a, b, f);
 }
